@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Révisions Brevet">
+<meta name="theme-color" content="#0f172a">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="apple-touch-icon.png">
+<title>Révisions Brevet 2026</title>
+<style>
+  :root{ --bg:#0f172a; --card:#1e293b; --txt:#e2e8f0; --mut:#94a3b8; --line:#334155; --air:#f59e0b;}
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html{ -webkit-text-size-adjust:100%;}
+  body{ margin:0; min-height:100vh; color:var(--txt);
+    font-family:-apple-system,"SF Pro Text","Inter",system-ui,sans-serif; font-size:16px; line-height:1.5;
+    background:radial-gradient(circle at 100% -5%, rgba(245,158,11,.22), transparent 42%),
+               radial-gradient(circle at 0% 105%, rgba(168,85,247,.22), transparent 45%), var(--bg);
+    padding:calc(26px + env(safe-area-inset-top)) 18px calc(40px + env(safe-area-inset-bottom));}
+  .hero{ display:flex; gap:16px; align-items:center; margin-bottom:8px;}
+  .hero img{ width:96px;height:138px;object-fit:cover;border-radius:16px;border:2px solid rgba(245,158,11,.6);
+    box-shadow:0 10px 28px rgba(0,0,0,.5); flex:0 0 auto;}
+  .hero .pill{ display:inline-block; font-size:11px; font-weight:700; color:#fcd34d; background:rgba(245,158,11,.16);
+    border:1px solid rgba(245,158,11,.4); padding:4px 10px; border-radius:999px; letter-spacing:.4px;}
+  .hero h1{ font-size:30px; margin:8px 0 2px; font-weight:800; letter-spacing:-1px; line-height:1.04;}
+  .hero h1 b{ background:linear-gradient(120deg,#fbbf24,#fb923c,#f472b6); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .hero .y{ font-size:13px; color:var(--mut);}
+  .lead{ font-size:14px; color:var(--mut); margin:14px 2px 16px;}
+  .cards{ display:flex; flex-direction:column; gap:14px;}
+  .subj{ display:block; text-decoration:none; color:var(--txt); border-radius:20px; padding:18px 18px;
+    position:relative; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.08);}
+  .subj.maths{ background:linear-gradient(125deg,#1e3a8a,#2563eb 70%,#3b82f6);}
+  .subj.fr{ background:linear-gradient(125deg,#7c3aed,#a855f7 60%,#db2777);}
+  .subj .ic{ font-size:34px; line-height:1;}
+  .subj h2{ margin:8px 0 2px; font-size:24px; font-weight:800; letter-spacing:-.4px;}
+  .subj p{ margin:0; font-size:13px; opacity:.9;}
+  .subj .go{ position:absolute; top:18px; right:18px; background:rgba(255,255,255,.18); border-radius:999px;
+    padding:7px 14px; font-size:13px; font-weight:700;}
+  .subj .dls{ display:flex; gap:8px; margin-top:13px;}
+  .subj .dls a{ flex:1; text-align:center; text-decoration:none; color:#fff; background:rgba(0,0,0,.28);
+    border:1px solid rgba(255,255,255,.18); border-radius:11px; padding:8px 6px; font-size:12px; font-weight:600;}
+  .note{ margin-top:22px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 16px; font-size:13px; color:var(--mut);}
+  .note b{ color:var(--txt);}
+  footer{ text-align:center; color:var(--mut); font-size:12px; margin-top:24px;}
+  footer b{ color:#fcd34d;}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <img src="airhead-portrait.jpg" alt="The Airhead">
+    <div>
+      <span class="pill">🦸 #AIRHEAD4LIFE</span>
+      <h1>Révisions<br><b>Brevet 2026</b></h1>
+      <div class="y">Tout en un · coaché par The Airhead</div>
+    </div>
+  </div>
+
+  <p class="lead">Choisis ta matière. Chaque pack contient les fiches complètes, une antisèche, un planning, un QCM et une version installable sur l'écran d'accueil 📲</p>
+
+  <div class="cards">
+    <a class="subj maths" href="https://gfabe.github.io/brevet-maths-2026/">
+      <span class="go">Ouvrir →</span>
+      <div class="ic">📐</div>
+      <h2>Mathématiques</h2>
+      <p>Nombres, calcul littéral, géométrie, fonctions, stats, Scratch…</p>
+      <div class="dls">
+        <a href="https://gfabe.github.io/brevet-maths-2026/Fiches_revision_maths_Brevet_2026.pdf">📘 Fiches PDF</a>
+        <a href="https://gfabe.github.io/brevet-maths-2026/Antiseche_maths_Brevet_2026.pdf">⚡ Antisèche</a>
+      </div>
+    </a>
+
+    <a class="subj fr" href="https://gfabe.github.io/brevet-francais-2026/">
+      <span class="go">Ouvrir →</span>
+      <div class="ic">📖</div>
+      <h2>Français</h2>
+      <p>Grammaire, conjugaison, orthographe, figures, rédaction, dictée…</p>
+      <div class="dls">
+        <a href="https://gfabe.github.io/brevet-francais-2026/Fiches_revision_francais_Brevet_2026.pdf">📕 Fiches PDF</a>
+        <a href="https://gfabe.github.io/brevet-francais-2026/Antiseche_francais_Brevet_2026.pdf">⚡ Antisèche</a>
+      </div>
+    </a>
+  </div>
+
+  <div class="note">📲 <b>Installe ce hub :</b> touche <b>Partager ⬆️</b> puis <b>« Sur l'écran d'accueil »</b> — tu auras toutes tes révisions à portée d'un tap.</div>
+
+  <footer>Bon courage 💪 · <b>#AIRHEAD4LIFE</b> 🦸</footer>
+</body>
+</html>
